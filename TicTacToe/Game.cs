@@ -54,7 +54,11 @@ namespace TicTacToe
             }
 
             if (isWinner)
+            {
+                ChangeTurns();
                 winner = CurrentTurnPlayer;
+            }
+                
 
             return winner;
         }
